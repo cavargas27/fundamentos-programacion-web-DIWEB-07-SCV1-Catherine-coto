@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del header */
+header {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+    header nav ul i {
+      font-size: 18.5px;
+      display: flex;
+      margin-right: 128px;
+      
+    }
+    */
+/*Estilo logo*/
+header img {
+  width: 275px;
+  position: absolute;
+  top: -11.7%;
+  right: 1428px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1150px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 23px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Aca empieza el footer */
+footer {
+  background-color: #0D1B2A;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #e0e1dd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

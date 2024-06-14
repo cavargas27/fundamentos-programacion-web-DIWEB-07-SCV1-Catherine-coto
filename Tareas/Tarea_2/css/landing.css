@@ -1,0 +1,72 @@
+/*Body del landing*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#home {
+  background: #E0E1DD;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+section#home h2 {
+  margin-bottom: 1rem;
+}
+
+section#home p {
+  margin-bottom: 1.5rem;
+}
+
+section#home .btn {
+  background: #415a77;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section#courses {
+  padding: 2rem 0;
+}
+
+section#courses h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cursos {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.cursos h3 {
+  margin-bottom: 1rem;
+}
+
+.cursos p {
+  margin-bottom: 1.5rem;
+}
+
+.cursos .btn {
+  background: #415a77;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
