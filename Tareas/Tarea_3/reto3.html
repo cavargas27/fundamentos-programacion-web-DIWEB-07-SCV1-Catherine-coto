@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo Interactivo</title>
+    <link rel="stylesheet" href="css/reto3.css">
+</head>
+<body>
+    <header>
+        <img src="#" class="positionLogo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Retos</a>
+                    <div class="dropdown-content">
+                        <a href="reto1.html">Reto 1</a>
+                        <a href="reto2.html">Reto 2</a>
+                        <a href="reto3.html">Reto 3</a>
+                        <a href="reto4.html">Reto 4</a>
+                        <a href="reto5.html">Reto 5</a>
+                        <a href="reto6.html">Reto 6</a>
+                        <a href="reto7.html">Reto 7</a>
+                        <a href="reto8.html">Reto 8</a>
+                        <a href="reto9.html">Reto 9</a>
+                        <a href="reto10.html">Reto 10</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Seleccione una Academia de Cursos Online</h1>
+        <select id="urlSelect">
+            <option value="" selected disabled>Elige una academia de cursos</option>
+            <option value="https://www.coursera.org">Coursera</option>
+            <option value="https://www.udemy.com">Udemy</option>
+            <option value="https://www.edx.org">edX</option>
+            <option value="https://www.futurelearn.com">FutureLearn</option>
+            <option value="https://www.pluralsight.com">Pluralsight</option>
+        </select>
+        <button class="btn_ir" id="navigateButton">Ir</button>
+    </div>
+
+    <script src="js/reto3.js"></script>
+
+    <footer>
+        <p>
+            Catherine-Vargas© 2024 <br />servicioalcliente@catherine.vargas.com
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Factura Digital</title>
+<link rel="stylesheet" href="css/reto1.css">
+</head>
+<body>
+  <header>
+    <img src="#" class="positionLogo" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Retos</a>
+                <div class="dropdown-content">
+                    <a href="reto1.html">Reto 1</a>
+                    <a href="reto2.html">Reto 2</a>
+                    <a href="reto3.html">Reto 3</a>
+                    <a href="reto4.html">Reto 4</a>
+                    <a href="reto5.html">Reto 5</a>
+                    <a href="reto6.html">Reto 6</a>
+                    <a href="reto7.html">Reto 7</a>
+                    <a href="reto8.html">Reto 8</a>
+                    <a href="reto9.html">Reto 9</a>
+                    <a href="reto10.html">Reto 10</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="form-section">
+      <h1>Factura Digital</h1>
+
+      <label for="numeroFactura">Número de Factura:</label>
+      <input type="text" id="numeroFactura">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha">
+
+      <label for="nombreCliente">Nombre del Cliente:</label>
+      <input type="text" id="nombreCliente">
+
+      <label for="articulo">Artículo Comprado:</label>
+      <input type="text" id="articulo">
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad">
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" step="0.01">
+
+      <button onclick="calcularFactura()">Facturar</button>
+      <button onclick="borrarCampos()">Borrar</button>
+    </div>
+
+    <div class="resultado">
+      <h2>Resultado:</h2>
+      <p><strong>Número de Factura:</strong> <span id="resultadoNumero"></span></p>
+      <p><strong>Fecha:</strong> <span id="resultadoFecha"></span></p>
+      <p><strong>Nombre del Cliente:</strong> <span id="resultadoNombre"></span></p>
+      <p><strong>Artículo Comprado:</strong> <span id="resultadoArticulo"></span></p>
+      <p><strong>Cantidad:</strong> <span id="resultadoCantidad"></span></p>
+      <p><strong>Precio:</strong> ₡<span id="resultadoPrecio"></span></p>
+      <p><strong>Subtotal:</strong> ₡<span id="subtotal"></span></p>
+      <p><strong>IVA (13%):</strong> ₡<span id="iva"></span></p>
+      <p><strong>Servicio (5%):</strong> ₡<span id="servicio"></span></p>
+      <p><strong>Total a Pagar:</strong> ₡<span id="totalPagar"></span></p>
+    </div>
+  </div>
+
+  <script src="js/reto1.js"></script>
+  
+    <footer>
+      <p>
+          Catherine-Vargas© 2024 <br />servicioalcliente@catherine.vargas.com <br />
+          
+        </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/E-LearnSpace">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/E-LearnSpace">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/E-LearnSpace">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+  </footer>
+  
+</body>
+</html>

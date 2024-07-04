@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/reto8.css">
+</head>
+<body>
+    <header>
+        <img src="#" class="positionLogo" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Retos</a>
+                <div class="dropdown-content">
+                    <a href="reto1.html">Reto 1</a>
+                    <a href="reto2.html">Reto 2</a>
+                    <a href="reto3.html">Reto 3</a>
+                    <a href="reto4.html">Reto 4</a>
+                    <a href="reto5.html">Reto 5</a>
+                    <a href="reto6.html">Reto 6</a>
+                    <a href="reto7.html">Reto 7</a>
+                    <a href="reto8.html">Reto 8</a>
+                    <a href="reto9.html">Reto 9</a>
+                    <a href="reto10.html">Reto 10</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+        <h1>Registro de Notas</h1>
+        <form id="studentForm">
+            <label for="firstName">Nombre del estudiante:</label>
+            <input type="text" id="firstName" required>
+            
+            <label for="lastName">Apellidos del estudiante:</label>
+            <input type="text" id="lastName" required>
+            
+            <label for="grade1">Nota 1:</label>
+            <input type="number" id="grade1" min="1" max="100" required>
+            
+            <label for="grade2">Nota 2:</label>
+            <input type="number" id="grade2" min="1" max="100" required>
+            
+            <label for="grade3">Nota 3:</label>
+            <input type="number" id="grade3" min="1" max="100" required>
+            
+            <button type="submit">Agregar</button>
+        </form>
+        
+        <h2>Consultar Estudiantes</h2>
+        <select id="studentsDropdown">
+            <option value="" disabled selected>Seleccione un estudiante</option>
+        </select>
+        
+        <button id="calculateAverage">Calcular Promedio</button>
+        
+        <p id="averageResult"></p>
+    </div>
+    
+    <script src="js/reto8.js"></script>
+    <footer>
+        <p>
+            Catherine-Vargas© 2024 <br />servicioalcliente@catherine.vargas.com <br />
+            
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </footer>
+</body>
+</html>

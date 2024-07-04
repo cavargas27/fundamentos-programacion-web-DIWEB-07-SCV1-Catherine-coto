@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho según tu diseño */
+    max-width: 600px; /* Ajusta el máximo ancho según tu diseño */
+    margin-top: 20px; /* Ajusta el margen superior según tu diseño */
+    margin-bottom: 20px; /* Ajusta el margen inferior según tu diseño */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .cajas {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn_limpiar {
+    background-color: red;
+  }
+  
+  .btn_limpiar:hover {
+    background-color: rgb(210, 62, 62);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+    /*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+    background-color: #1B263B;
+    color: #e0e1dd;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 15px;
+  }
+  
+  /*Estilo logo*/
+  header img {
+    width: 275px;
+    position: absolute;
+    top: -11.7%;
+    right: 1428px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 1150px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 23px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Aca empieza el footer */
+  footer {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  footer p {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: #e0e1dd;
+  }
+  
+  /* Dropdown estilo */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #1b263b;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropbtn {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropbtn {
+    margin-top: -10px;
+  }

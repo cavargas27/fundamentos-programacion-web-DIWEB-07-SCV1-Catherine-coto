@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.resultado {
+  flex: 1;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: rgb(96, 96, 215);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:last-child {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.resultado h2 {
+  margin-bottom: 10px;
+}
+
+.resultado p {
+  margin-bottom: 5px;
+}
+
+.resultado strong {
+  font-weight: bold;
+}
+
+.resultado span {
+  font-weight: normal;
+  color: #555;
+}
+
+/*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Estilo logo*/
+header img {
+  width: 275px;
+  position: absolute;
+  top: -11.7%;
+  right: 1428px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1150px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 23px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Aca empieza el footer */
+footer {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #e0e1dd;
+}
+
+/* Dropdown estilo */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1b263b;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropbtn {
+  margin-top: -10px;
+}

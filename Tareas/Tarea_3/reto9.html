@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Academia de Cursos Online</title>
+    <link rel="stylesheet" href="css/reto9.css">
+</head>
+<body>
+    <header>
+        <img src="#" class="positionLogo" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Retos</a>
+                <div class="dropdown-content">
+                    <a href="reto1.html">Reto 1</a>
+                    <a href="reto2.html">Reto 2</a>
+                    <a href="reto3.html">Reto 3</a>
+                    <a href="reto4.html">Reto 4</a>
+                    <a href="reto5.html">Reto 5</a>
+                    <a href="reto6.html">Reto 6</a>
+                    <a href="reto7.html">Reto 7</a>
+                    <a href="reto8.html">Reto 8</a>
+                    <a href="reto9.html">Reto 9</a>
+                    <a href="reto10.html">Reto 10</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+        <h1>E-LearnSpace</h1>
+        <form id="courseForm">
+            <fieldset>
+                <legend>Seleccione un curso:</legend>
+                <label>
+                    <input type="radio" name="course" value="javascript"> JavaScript
+                </label>
+                <label>
+                    <input type="radio" name="course" value="python"> Python
+                </label>
+                <label>
+                    <input type="radio" name="course" value="html_css"> HTML & CSS
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seleccione la opción de su interés:</legend>
+                <label>
+                    <input type="checkbox" name="feature" value="Avanzado"> Avanzado 
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="Full Stack"> Full Stack
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="Técnico"> Técnico
+                </label>
+            </fieldset>
+
+            <button type="button" onclick="showResult()">Mostrar resultado</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="js/reto9.js"></script>
+    <footer>
+        <p>
+            Catherine-Vargas© 2024 <br />servicioalcliente@catherine.vargas.com <br />
+            
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </footer>
+</body>
+</html>

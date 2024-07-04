@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../imagenes/fondoreto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+select,
+button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #1b263b;
+}
+
+.btn_ir {
+  padding: 10px;
+  width: 100px;
+  background-color: #415a77;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.btn_ir:hover {
+  background-color: #778da9;
+}
+/*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding: 15px;
+}
+
+/*Estilo logo*/
+header img {
+  width: 275px;
+  position: absolute;
+  top: -11.7%;
+  right: 1428px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1150px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 23px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Aca empieza el footer */
+footer {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #e0e1dd;
+}
+
+/* Dropdown estilo */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1b263b;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropbtn {
+  margin-top: -10px;
+}

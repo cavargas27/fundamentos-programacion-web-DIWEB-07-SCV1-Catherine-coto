@@ -1,0 +1,179 @@
+
+
+.banner {
+    background-image: url("../imagenes/Trax-Banner.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*botones circulares*/
+
+.btncirculos {
+    padding: 15px;
+    border: none;
+    /*distancia entre ellos*/
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.img img {
+    width: 60%;
+}
+
+.img {
+    padding-top: 20px;
+}
+
+.info {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.info h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.info3 {
+    box-shadow: 3px 3px 10px #4d4d4d;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 40px 20px;
+    border: solid rgb(180, 180, 180) 1px;
+}
+
+.info2 {
+    padding: 10px 80px;
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(223, 9, 9);
+}
+
+.button1 {
+    background-color: gray;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+
+.button2 {
+    background-color: #21bd5c;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: #F4F4F4;
+    height: 150px;
+}
+
+.toyota {
+    padding: 25px 30px 5px 30px;
+}
+/*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*Estilo logo*/
+  header img {
+    width: 275px;
+    position: absolute;
+    top: -11.7%;
+    right: 1428px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 1150px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 23px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Aca empieza el footer */
+  footer {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  footer p {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: #e0e1dd;
+  }
+  
+  /* Dropdown estilo */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #1b263b;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropbtn {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropbtn {
+    margin-top: -10px;
+  }
+  
+

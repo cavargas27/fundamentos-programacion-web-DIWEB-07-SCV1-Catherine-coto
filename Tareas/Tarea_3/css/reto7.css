@@ -1,0 +1,132 @@
+/*importacion CSS secundarios*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+img {
+  width: 100%;
+}
+
+map {
+  max-width: 100%;
+}
+/*
+        @media screen and (max-width: 768px) {
+            map {
+
+            }
+        }
+        */
+
+/*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Estilo logo*/
+header img {
+  width: 275px;
+  position: absolute;
+  top: -11.7%;
+  right: 1428px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1150px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 23px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Aca empieza el footer */
+footer {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #e0e1dd;
+}
+
+/* Dropdown estilo */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1b263b;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropbtn {
+  margin-top: -10px;
+}
+

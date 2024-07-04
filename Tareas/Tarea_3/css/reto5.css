@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../imagenes/chevyreto5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Alinea el contenido hacia el centro */
+    margin-bottom: auto; /* Alinea el contenido hacia el centro */
+  }
+  
+  .logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .dropdowns {
+    margin-bottom: 20px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+  }
+  
+  #carImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn_calcular {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(56, 50, 50);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn_calcular:hover {
+    background-color: gray;
+  }
+  
+  /*AQUI EMPIEZA EL DISEñO DE HEADER Y FOOTER*/
+/* Estilos del header */
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /*Estilo logo*/
+  header img {
+    width: 275px;
+    position: absolute;
+    top: -11.7%;
+    right: 1428px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 1150px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 23px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Aca empieza el footer */
+  footer {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  footer p {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: #e0e1dd;
+  }
+  
+  /* Dropdown estilo */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #1b263b;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropbtn {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropbtn {
+    margin-top: -10px;
+  }

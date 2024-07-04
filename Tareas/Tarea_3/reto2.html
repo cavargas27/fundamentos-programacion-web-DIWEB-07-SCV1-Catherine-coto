@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Dólares a Colones y de Colones a Dólares</title>
+    <link rel="stylesheet" href="css/reto2.css">
+</head>
+<body>
+    <header>
+        <img src="#" class="positionLogo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Retos</a>
+                    <div class="dropdown-content">
+                        <a href="reto1.html">Reto 1</a>
+                        <a href="reto2.html">Reto 2</a>
+                        <a href="reto3.html">Reto 3</a>
+                        <a href="reto4.html">Reto 4</a>
+                        <a href="reto5.html">Reto 5</a>
+                        <a href="reto6.html">Reto 6</a>
+                        <a href="reto7.html">Reto 7</a>
+                        <a href="reto8.html">Reto 8</a>
+                        <a href="reto9.html">Reto 9</a>
+                        <a href="reto10.html">Reto 10</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Conversor de Colones a Dólares y de Dólares a Colones</h1>
+        <div class="cajas">
+            <label for="exchangeRate">Tipo de Cambio:</label>
+            <input type="number" id="exchangeRate" placeholder="Ingrese el tipo de cambio">
+        </div>
+        <div class="cajas">
+            <label for="dollars">Monto en Dólares $ (USD):</label>
+            <input type="number" id="dollars" placeholder="Ingrese el monto en dólares">
+        </div>
+        <div class="cajas">
+            <label for="colones">Monto en Colones ₡ (CRC):</label>
+            <input type="number" id="colones" placeholder="Ingrese el monto en colones">
+        </div>
+        <div class="cajas">
+            <button onclick="convertir()">Convertir</button>
+            <button class="btn_limpiar" onclick="limpiar()">Limpiar</button>
+        </div>
+        <div class="cajas">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Catherine-Vargas© 2024 <br />servicioalcliente@catherine.vargas.com
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/reto2.js"></script>
+</body>
+</html>
