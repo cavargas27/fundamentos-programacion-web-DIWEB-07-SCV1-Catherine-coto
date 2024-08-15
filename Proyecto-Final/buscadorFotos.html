@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Plantilla header</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/buscadorFotos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" class="positionLogo" />
+        <div class="car"><li><a><i class="fa-solid fa-cart-shopping"></i></a></li></div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="login.html">Login/Registro</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="registro.html">Registarse</a></li>
+              
+              <li>
+                  <!-- toggle switch -->
+                  <div class="toggle-switch">
+                      <!--control switch tipo checkbox-->
+                      <input type="checkbox" id="modoOscuroToggle" class="checkbox">
+                      <label for="modoOscuroToggle" class="toggle">
+                          <!--icono modoOscuro-->
+                          <i id="modoOscuroIcon" class="fas fa-sun modoOscuroIcon"></i>
+                          
+                      </label>
+                  </div>
+              </li>
+          </ul>
+      </nav> 
+        
+    </header>
+
+    <main class="buscFotos">
+      <div class="container">
+          <h1>Buscador Fotográfico</h1>
+          <select id="categorySelect">
+              <option value="">Seleccionar categoría</option>
+              <option value="cursos">Cursos</option>
+              <option value="profesores">Profesores</option>
+              <option value="estudiantes">Estudiantes</option>
+          </select>
+          <div id="gallery" class="gallery">
+              <!-- Las imágenes se añadirán aquí dinámicamente -->
+          </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  </main>
+    <footer>
+        <p>
+            E-LearnSpace © 2024 <br />servicioalcliente@e-learnspace.com <br />
+            Ponte en contacto con nosotros
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/buscadorFotos.js"></script>
+</body>
+</html>

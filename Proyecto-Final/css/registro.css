@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: "Roboto", sans-serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+main {
+  height: 1000px;
+  background-image: url(../imagenes/backgroundform.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Estilodecarcternormal {
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-align: left;
+  color: rgb(218, 218, 218);
+  opacity: 70%;
+}
+
+
+.lineas {
+  margin-top: 20px;
+  height: 5px;
+  width: 440px;
+  background: rgba(198, 198, 198, 1);
+  opacity: 0.52;
+}
+
+.encapsuladroDeInfo {
+  width: 620px;
+  height: 470px;
+  position: absolute;
+  top: 520px;
+  margin: 30px 10px 0 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divisorINFO {
+  margin-bottom: 20px;
+}
+
+.cajasInput {
+  width: 170px;
+  height: 30px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0;
+  border: 2px solid #333;
+  outline: none;
+  background: transparent;
+}
+
+.espacioRegistro {
+  width: 770px;
+  height: 900px;
+  background-color: #E0E1DD;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.415), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textos {
+  text-align: center;
+}
+
+.divisionInputs {
+  width: 770px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #cccccc3d;
+}
+
+.ingresoIndividual {
+  margin: 0 30px;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.button {
+  transition-duration: 0.4s;
+  height: 45px;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px 0 14px;
+  border: 0;
+  background-color: #415a77;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 550;
+}
+
+.button:hover {
+  background-color: #778da9;
+}
+
+.blockesRegistro {
+  display: flex;
+}
+
+.alineacionNacimiento {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.selector {
+  background-color: rgb(225, 225,) 
+  
+}
+
+/* Estilo básico para el botón */
+#matriculaButton {
+  background-color: #415a77; 
+  border: none; 
+  color: #fff; 
+  padding: 9px 15px; 
+  text-align: center; 
+  text-decoration: none; 
+ 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  transition: background-color 0.3s; 
+  margin-left: 35%;
+}
+
+#matriculaButton:hover {
+  background-color: #778da9; 
+}

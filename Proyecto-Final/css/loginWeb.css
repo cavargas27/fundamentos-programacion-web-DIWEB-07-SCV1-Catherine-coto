@@ -1,0 +1,102 @@
+main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../imagenes/landingp.avif");
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.textbox {
+    margin: 10px 0;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #415A77;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #778DA9;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*animacion btn inciar sesion*/
+
+@keyframes pulse {
+    0% {
+        background-color: #778DA9;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #778DA9;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: #778DA9;
+        transform: scale(1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Estilo para el mensaje de información */
+.info-message {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: none; 
+}
+
+.info-message.show {
+    display: block; /* Muestra el mensaje cuando se añada la clase 'show' */
+}

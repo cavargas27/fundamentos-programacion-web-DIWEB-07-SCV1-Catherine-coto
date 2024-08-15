@@ -1,0 +1,863 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.txt_blanco {
+  color: #fff !important;
+}
+
+.txt_negro {
+  color: #000 !important;
+}
+
+.sectionHeader2 {
+  background-image: url("../imagenes/backgroundhome.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  /*background-position: 50% -50px;*/
+  text-align: center;
+}
+
+.bigheadline,
+.subheadline {
+  margin: 0;
+  padding: 0;
+  color: white;
+  animation: fadeIn 1s ease-in-out; /* Animación fadeIn */
+}
+
+.bigheadline {
+  font-weight: 100;
+  font-size: 92px;
+}
+
+.subheadline {
+  font-weight: 200;
+  font-size: 3em;
+  animation: slideInFromTop 1s ease-in-out; /* Animación slideInFromTop */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt_negro {
+  font-size: 16px;
+  text-align: center;
+  padding: 30px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SCROLL---------------------------------------*/
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------MENU---------------------------------------*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  /* Ajusta el relleno según sea necesario */
+}
+
+.capa-logo img {
+  height: 50px; /* Ajusta la altura según sea necesario */
+}
+
+.capa-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.capa-menu ul li {
+  margin-right: 10px; /* Espacio entre elementos de menú */
+}
+
+.capa-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.capa-menu a:hover {
+  background-color: #0057fa;
+  border-color: white;
+}
+
+.capa-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos del menú */
+}
+
+.capa-menu ul li {
+  margin-right: 10px;
+  display: flex; /* Ajusta para que los elementos se alineen correctamente */
+  align-items: center;
+}
+
+.language-text {
+  color: white;
+  margin-right: 5px;
+}
+
+/*COMPONENTE SWITCH*/
+
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.language-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.capa-menu,
+.capa-logo {
+  width: 50%;
+  text-align: center;
+  background-color: black;
+}
+
+.capa-logo img {
+  height: 150px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SWITCH---------------------------------------*/
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.language-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4900fa;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Texto de idioma */
+.language-text {
+  position: relative;
+  top: -10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------CV---------------------------------------*/
+#cv {
+  margin-top: 50px;
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+  position: relative;
+  text-align: center; /* Centrar horizontalmente el dropdown */
+}
+
+/* Estilo para el botón principal */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para el contenido del dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0057fa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 50%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Centrar horizontalmente */
+  border-radius: 5px; /* Añadir borde redondeado */
+}
+
+/* Estilo para los botones dentro del dropdown */
+.dropdown-content button {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: none;
+  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo para los botones al pasar el mouse */
+.dropdown-content button:hover {
+  background-color: #0008fa; /* Cambio de color de fondo al pasar el mouse */
+}
+
+/* Mostrar el dropdown cuando se pasa el mouse sobre él */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Añadir flecha abajo al botón principal */
+.dropbtn::after {
+  content: "\25BC";
+  margin-left: 5px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SERVICIOS---------------------------------------*/
+
+.service-area {
+  /*margin: 80px 0px 40px 0px;*/
+}
+
+/*
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*/
+
+.block_title {
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  /*max-width: 293px;*/
+  height: 263px;
+  padding: 0px 15px 0px 15px;
+}
+
+.service-wrap1,
+.service-wrap2,
+.service-wrap3 {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  display: flex; /* Utilizar flexbox */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  border-radius: 50%;
+  padding: 5px; /* Ajustar el espacio interior */
+  display: block;
+}
+
+.service-wrap1 h4,
+.service-wrap2 h4,
+.service-wrap3 h4 {
+  margin-top: 10px; /* Espacio entre el icono y el texto */
+  font-size: 1.5em; /* Tamaño del texto */
+  color: black; /* Color del texto */
+}
+
+.service-wrap1 i {
+  margin-top: 10px;
+  color: #0008fa;
+  font-size: 5em; /* Tamaño del icono más grande */
+}
+
+.service-wrap2 i {
+  margin-top: 10px;
+  color: #4900fa;
+  font-size: 5em; /* Tamaño del icono más grande */
+}
+
+.service-wrap3 i {
+  margin-top: 10px;
+  color: #0057fa;
+  font-size: 5em; /* Tamaño del icono más grande */
+}
+
+/* Añadir transición para la propiedad de opacidad */
+.service-wrap1 i,
+.service-wrap2 i,
+.service-wrap3 i {
+  transition: opacity 0.3s ease;
+}
+
+/* Aplicar opacidad reducida al icono cuando se pasa el cursor */
+.service-wrap1:hover i,
+.service-wrap2:hover i,
+.service-wrap3:hover i {
+  opacity: 0.7;
+}
+
+/* Añadir transición para la propiedad de transformación */
+.service-wrap1:hover,
+.service-wrap2:hover,
+.service-wrap3:hover {
+  transform: scale(1.1); /* Cambiar el tamaño del icono al 110% en el hover */
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------PROYECTOS---------------------------------------*/
+
+#cards {
+  align-items: center;
+  height: 1000px;
+  padding-top: 100px;
+  background-image: url("../imagenes/backgroundestadist.png");
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-position: center; /* Centra la imagen */
+}
+#cards .block_title {
+  color: #4900fa;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.btn {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b263b;
+  /*transition: background-color 0.3s ease-in-out;*/
+}
+
+.btn:hover {
+  background-color: #778da9;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------CONTACTO---------------------------------------*/
+.contenedorContacto {
+  width: 300%;
+  max-width: 900px; /* Ajusta el ancho máximo según necesites */
+  margin-left: 25%; /* Mueve el contenedor hacia la derecha */
+  padding: 6%;
+}
+
+#contacto {
+  align-items: center;
+  height: 855px;
+  padding-top: 100px;
+  background: linear-gradient(70deg, #415a77, #415a77, #415a77);
+}
+
+#sendEmailForm {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 60%;
+  margin: 0 auto; /* Centra los inputs horizontalmente */
+  display: block; /* Asegura que los inputs se muestren en una línea separada */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 15%; /* Ajusta el ancho del botón */
+  margin: 0 auto; /* Centra el botón horizontalmente */
+  padding: 70px;
+  /*background-color: #0057FA;*/
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #778da9;
+}
+
+button:active {
+  background-color: #e0e1dd;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------SCROLL UP---------------------------------------*/
+
+#scrollButton {
+  position: fixed;
+  bottom: 90px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  display: none; /* Ocultar por defecto */
+  margin-top: 10%; /* Espacio entre el botón y el contenido */
+  width: 60px; /* Mismo ancho que el botón de WhatsApp */
+  height: 60px; /* Mismo alto que el botón de WhatsApp */
+  padding: 0; /* Elimina el relleno del botón */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  background-color: #778da9; /* Color de fondo del botón */
+  border: none; /* Quita el borde del botón */
+  color: #fff; /* Color del texto */
+  z-index: 1000; /* Asegura que esté encima del botón de WhatsApp */
+}
+
+#scrollButton:before {
+  content: "\25B2"; /* Código Unicode para una flecha hacia arriba */
+  font-size: 20px; /* Tamaño de la flecha */
+}
+
+/*carrucel*/
+.carousel-container {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-left: 19%; /* Esto empuja el contenedor hacia la derecha */
+  margin-right: 0; /* Asegúrate de que el margen derecho sea 0 si es necesario */
+}
+
+.carousel {
+  display: flex;
+  width: 30%;
+  animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(
+      -90%
+    ); /* Ajusta este valor para el número de imágenes */
+  }
+}
+
+/* Testimonial */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px; /* Espacio entre los círculos, ajusta según sea necesario */
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px; /* Ajusta el tamaño del círculo */
+  height: 280px; /* Ajusta el tamaño del círculo */
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px; /* Espacio en la parte inferior de cada círculo */
+  transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
+}
+
+.testimonial:hover {
+  transform: scale(1.1); /* Agranda el círculo en un 10% */
+}
+
+.testimonial img {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: 100px; /* Ajusta el tamaño de la imagen */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.testimonial h4 {
+  margin: 10px 0;
+  font-size: 1rem; /* Ajusta el tamaño de la fuente */
+}
+
+.testimonial p {
+  font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+  color: #666;
+  padding: 0 50px; /* Añade un poco de padding a los lados */
+}
+
+/*contador*/
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+
+  margin-top: 80px; /* Ajusta esta propiedad para mover las cifras más abajo */
+  transform: translateX(
+    28%
+  ); /* Ajusta este valor para mover las cifras a la derecha */
+}
+
+.stat {
+  text-align: center;
+}
+
+.count {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.statistics-section {
+  width: 80%;
+  text-align: center;
+}
+
+.statistics-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-left: 390px;
+  font-family: "Roboto", sans-serif;
+}
+
+.pestadistica {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-left: 390px;
+  color: #fff;
+}
+
+/*btn ver mas*/
+.btn-ver-mas {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  width: 7%;
+  color: #fff;
+  background-color: #415a77;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 47%; /* Agregar margen izquierdo automático para moverlo hacia la derecha */
+}
+
+.btn-ver-mas:hover {
+  background-color: #778da9;
+}
+
+.btnBuscador {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  width: 9%;
+  color: #fff;
+  background-color: #1B263B;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 30%; /* Agregar margen izquierdo automático para moverlo hacia la derecha */
+  margin-top: 2%;
+}
+
+.btnBuscador:hover {
+  background-color: #415A77;
+}
+
+/* LIGHTBOX VIDEO */
+.cursor {
+  cursor: pointer;
+}
+
+
+
+/* clases lightbox */
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.lightbox-container {
+  position: relative;
+  max-width: 960px;
+  margin: 10% auto;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+}
+
+
+/*transparencia*/
+
+.lightbox-content {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-close {
+
+  background-color: #d8851f;
+  position: absolute;
+  right: 7%;
+  font-size: 1rem;
+  color: #fff;
+  top: -40px;
+}
+
+@media (max-width: 575px) {
+  .lightbox-container {
+      margin-top: 150px !important;
+  }
+}
+
+
+/* controla las clases responsivas del vídeo */
+
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 575px) {
+  .video-container {
+      width: 100% !important;
+      margin: 0 auto;
+  }
+}
+
+.cursor{
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  width: 9%;
+  color: #fff;
+  background-color: #415A77;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 46%; /* Agregar margen izquierdo automático para moverlo hacia la derecha */
+  margin-top: 2%;
+
+}
+
+.cursor:hover {
+  background-color: #778DA9;
+}

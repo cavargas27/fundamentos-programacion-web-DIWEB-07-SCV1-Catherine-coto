@@ -1,0 +1,49 @@
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../imagenes/landingp.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 15%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  select,
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #1b263b;
+  }
+  
+  .btn_ir {
+    padding: 10px;
+    width: 100px;
+    background-color: #415a77;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn_ir:hover {
+    background-color: #778da9;
+  }
+  

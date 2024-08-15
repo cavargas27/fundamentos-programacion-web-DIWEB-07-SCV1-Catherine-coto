@@ -1,0 +1,43 @@
+main {
+  background-image: url("../imagenes/landingp.avif");
+  padding: 20em;
+  background-size: cover;
+}
+
+/* Estilo del contenedor dentro de main */
+.container {
+  text-align: center;
+  color: white;
+  transform: rotateY(20deg);
+  animation: rotate 10s infinite linear;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.8rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #415a77;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #778da9;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

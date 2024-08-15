@@ -1,0 +1,193 @@
+main{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilo para el dropdown */
+#categoryFilter {
+    font-size: 18px; 
+    padding: 4px; 
+    border: 2px solid #415A77; 
+    border-radius: 10px; 
+    background-color: #E0E1DD; 
+    color: #1B263B; 
+    appearance: none; 
+    cursor: pointer; 
+    width: 9%; 
+}
+
+.filters {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    align-items: center;     
+    margin: 20px; 
+}
+
+/* Estilo para el label */
+.filters label {
+    font-size: 18px; 
+    margin-right: 10px; 
+}
+
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course {
+    border: 1px solid #415A77;
+    padding: 20px;
+    text-align: center;
+    width: 490px; 
+    height: 418px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.course img {
+    width: 300px; 
+    height: 170px; 
+    object-fit: cover; 
+    position: relative;
+}
+.course h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.course p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.course button {
+    font-family: "Roboto", sans-serif;
+  background-color: #415a77;
+    color: #ccc;
+    border: 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 8px;
+    width: 140px;
+}
+
+.course button:hover {
+    background-color:#778DA9;
+}
+
+/*barra de busqueda*/
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Estilo para el input de busqueda */
+.search-bar input[type="text"] {
+    padding: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    width: 400px; 
+    font-size: 16px; 
+}
+
+/* Estilo para el botón de búsqueda */
+.search-bar button {
+    border: none;
+    background-color: #415a77;
+    color: #fff;
+    border-radius: 8px; 
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 17px; 
+    width: 85px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el estado hover del botón */
+.search-bar button:hover {
+    background-color: #778DA9;
+}
+
+/*estilo para total a pagar */
+#paymentSummary {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+/*estilo combo doble */
+.course-selection {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo del título */
+.course-selection h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los contenedores de dropdowns */
+.dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+.course-selection label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los selectores */
+.course-selection select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo del botón de calcular */
+.course-selection .btn_calcular {
+    padding: 12px;
+    background-color: #415A77;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.course-selection .btn_calcular:hover {
+    background-color: #778DA9;
+}
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultado p {
+    font-size: 18px;
+    color: #333;
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registro E-LearnSpace</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" class="positionLogo" />
+        <div class="car"><li><a><i class="fa-solid fa-cart-shopping"></i></a></li></div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="registro.html">Registarse</a></li>
+              <li>
+                  <!-- toggle switch -->
+                  <div class="toggle-switch">
+                      <!--control switch tipo checkbox-->
+                      <input type="checkbox" id="modoOscuroToggle" class="checkbox">
+                      <label for="modoOscuroToggle" class="toggle">
+                          <!--icono modoOscuro-->
+                          <i id="modoOscuroIcon" class="fas fa-sun modoOscuroIcon"></i>
+                      </label>
+                  </div>
+              </li>
+          </ul>
+      </nav> 
+        
+    </header>
+
+
+    <main>
+        <!-- AQUI INICIA EL CONTENIDO DE LA RESPECTIVA PAGINA QUE SE ESTE TRABAJANDO-->
+        <div>
+            <div class="espacioRegistro">
+                <!-- ESTE ES EL TITULO -->
+                <h2>REGISTRO</h2>
+                <form>
+<!-- -------------------------------------- LINEA DE REGISTRO 1 ------------------- -->
+                    <div class="divisionInputs">
+                        <div class="ingresoIndividual">
+                        <!-- AQUI SE INGRESA EL NOMBRE -->
+                        <h3>NOMBRE</h3>
+                        <input type="text" id="nombre" class="cajasInput " placeholder="" required>
+                        </div>
+                        <!-- AQUI SE INGRESA APELLIDO 1 -->
+                        <div class="ingresoIndividual">
+                        <h3>PRIMER APELLIDO</h3>
+                        <input type="text" id="apellido1" class="cajasInput" required>
+                        </div>
+                        <div class="ingresoIndividual">
+                        <h3>SEGUNDO APELLIDO</h3>
+                        <input type="text" id="apellido2" class="cajasInput" required>
+                        </div>
+                    </div>
+<!-- -------------------------------------- LINEA DE REGISTRO 2 ------------------- -->
+                    <div class="divisionInputs">
+                        <div class="ingresoIndividual">
+                            <!-- AQUI SE INGRESA EL Correo -->
+                            <h3>CORREO</h3>
+                            <input type="email" id="correo" class="cajasInput " placeholder="" required>
+                        </div>
+                            <!-- AQUI SE INGRESA TELEFONO-->
+                            <div class="ingresoIndividual">
+                            <h3>TELÉFONO</h3>
+                            <input type="text" id="telefono" class="cajasInput" placeholder="####-####" required>
+                        </div>
+                        <!-- AQUI SE INGRESA NACIMIENTO -->
+                        <div class="ingresoIndividual">
+                            <h3>NACIMIENTO</h3>
+                            <div class="alineacionNacimiento">
+                            <div>
+                                <!-- ESTE ES EL DIA -->
+                                <select name="dias" id="dia" class="selector" required>
+                                    <option value='--'>--</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                    <option value='11'>11</option>
+                                    <option value='12'>12</option>
+                                    <option value='13'>13</option>
+                                    <option value='14'>14</option>
+                                    <option value='15'>15</option>
+                                    <option value='16'>16</option>
+                                    <option value='17'>17</option>
+                                    <option value='18'>18</option>
+                                    <option value='19'>19</option>
+                                    <option value='20'>20</option>
+                                    <option value='21'>21</option>
+                                    <option value='22'>22</option>
+                                    <option value='23'>23</option>
+                                    <option value='24'>24</option>
+                                    <option value='25'>25</option>
+                                    <option value='26'>26</option>
+                                    <option value='27'>27</option>
+                                    <option value='28'>28</option>
+                                    <option value='29'>29</option>
+                                    <option value='30'>30</option>
+                                    <option value='31'>31</option>
+                                </select>
+                            </div>
+                            <div>
+                                <!-- ESTE ES EL MES -->
+                                <select name="meses" id="mes" class="selector" required>
+                                    <option value='---'>---</option>
+                                    <option value='enero'>ene</option>
+                                    <option value='febrero'>feb</option>
+                                    <option value='marzo'>mar</option>
+                                    <option value='abril'>abr</option>
+                                    <option value='mayo'>may</option>
+                                    <option value='junio'>jun</option>
+                                    <option value='julio'>jul</option>
+                                    <option value='agosto'>ago</option>
+                                    <option value='septiembre'>sep</option>
+                                    <option value='octubre'>oct</option>
+                                    <option value='noviembre'>nov</option>
+                                    <option value='diciembre'>dic</option>
+                                </select>
+                            </div>
+                            <div>
+                                <!-- ESTE ES EL AñO -->
+                                <select name="años" id="año" class="selector" required>
+                                    <option value='----'>----</option>
+                                    <option value='1930'>1930</option>
+                                    <option value='1931'>1931</option>
+                                    <option value='1932'>1932</option>
+                                    <option value='1933'>1933</option>
+                                    <option value='1934'>1934</option>
+                                    <option value='1935'>1935</option>
+                                    <option value='1936'>1936</option>
+                                    <option value='1937'>1937</option>
+                                    <option value='1938'>1938</option>
+                                    <option value='1939'>1939</option>
+                                    <option value='1940'>1940</option>
+                                    <option value='1941'>1941</option>
+                                    <option value='1942'>1942</option>
+                                    <option value='1943'>1943</option>
+                                    <option value='1944'>1944</option>
+                                    <option value='1945'>1945</option>
+                                    <option value='1946'>1946</option>
+                                    <option value='1947'>1947</option>
+                                    <option value='1948'>1948</option>
+                                    <option value='1949'>1949</option>
+                                    <option value='1950'>1950</option>
+                                    <option value='1951'>1951</option>
+                                    <option value='1952'>1952</option>
+                                    <option value='1953'>1953</option>
+                                    <option value='1954'>1954</option>
+                                    <option value='1955'>1955</option>
+                                    <option value='1956'>1956</option>
+                                    <option value='1957'>1957</option>
+                                    <option value='1958'>1958</option>
+                                    <option value='1959'>1959</option>
+                                    <option value='1960'>1960</option>
+                                    <option value='1961'>1961</option>
+                                    <option value='1962'>1962</option>
+                                    <option value='1963'>1963</option>
+                                    <option value='1964'>1964</option>
+                                    <option value='1965'>1965</option>
+                                    <option value='1966'>1966</option>
+                                    <option value='1967'>1967</option>
+                                    <option value='1968'>1968</option>
+                                    <option value='1969'>1969</option>
+                                    <option value='1970'>1970</option>
+                                    <option value='1971'>1971</option>
+                                    <option value='1972'>1972</option>
+                                    <option value='1973'>1973</option>
+                                    <option value='1974'>1974</option>
+                                    <option value='1975'>1975</option>
+                                    <option value='1976'>1976</option>
+                                    <option value='1977'>1977</option>
+                                    <option value='1978'>1978</option>
+                                    <option value='1979'>1979</option>
+                                    <option value='1980'>1980</option>
+                                    <option value='1981'>1981</option>
+                                    <option value='1982'>1982</option>
+                                    <option value='1983'>1983</option>
+                                    <option value='1984'>1984</option>
+                                    <option value='1985'>1985</option>
+                                    <option value='1986'>1986</option>
+                                    <option value='1987'>1987</option>
+                                    <option value='1988'>1988</option>
+                                    <option value='1989'>1989</option>
+                                    <option value='1990'>1990</option>
+                                    <option value='1991'>1991</option>
+                                    <option value='1992'>1992</option>
+                                    <option value='1993'>1993</option>
+                                    <option value='1994'>1994</option>
+                                    <option value='1995'>1995</option>
+                                    <option value='1996'>1996</option>
+                                    <option value='1997'>1997</option>
+                                    <option value='1998'>1998</option>
+                                    <option value='1999'>1999</option>
+                                    <option value='2000'>2000</option>
+                                    <option value='2001'>2001</option>
+                                    <option value='2002'>2002</option>
+                                    <option value='2003'>2003</option>
+                                    <option value='2004'>2004</option>
+                                    <option value='2005'>2005</option>
+                                    <option value='2006'>2006</option>
+                                    <option value='2007'>2007</option>
+                                    <option value='2008'>2008</option>
+                                    <option value='2009'>2009</option>
+                                    <option value='2010'>2010</option>
+                                    <option value='2011'>2011</option>
+                                    <option value='2012'>2012</option>
+                                    <option value='2013'>2013</option>
+                                    <option value='2014'>2014</option>
+                                    <option value='2015'>2015</option>
+                                    <option value='2016'>2016</option>
+                                    <option value='2017'>2017</option>
+                                    <option value='2018'>2018</option>
+                                    <option value='2019'>2019</option>
+                                    <option value='2020'>2020</option>
+                                    <option value='2021'>2021</option>
+                                    <option value='2022'>2022</option>
+                                    <option value='2023'>2023</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+<!-- -------------------------------------- LINEA DE REGISTRO 3 ------------------- -->
+                    <div class="divisionInputs">
+                        <div class="ingresoIndividual">
+                            <!-- AQUI SE INGRESA LA PROVINCIA -->
+                            <h3>PROVINCIA</h3>
+                                <!-- ESTE ES EL MES -->
+                                <select name="provincias" id="provincia" class="selector margenes" onchange="actualizarDropdownCanton()" required>
+                                    <option value='---'>---</option>
+                                    <option value='San José'>San José</option>
+                                    <option value='Alajuela'>Alajuela</option>
+                                    <option value='Heredia'>Heredia</option>
+                                    <option value='Cartago'>Cartago</option>
+                                    <option value='Puntarenas'>Puntarenas</option>
+                                    <option value='Guanacaste'>Guanacaste</option>
+                                    <option value='Limón'>Limón</option>
+                                </select>
+                        </div>
+                        <div class="ingresoIndividual">
+                            <!-- AQUI SE INGRESA LA CANTON -->
+                            <h3>CANTÓN</h3>
+                                <!-- ESTE ES EL CANTON -->
+                                <select name="cantones" id="canton" class="selector margenes" required>
+                                    <option value='-----'>-----</option>
+                                    <option value='Abangares'>Abangares</option>
+                                    <option value='Acosta'>Acosta</option>
+                                    <option value='Agua Buena'>Agua Buena</option>
+                                    <option value='Alajuela'>Alajuela</option>
+                                    <option value='Alajuelita'>Alajuelita</option>
+                                    <option value='Alfaro Ruiz'>Alfaro Ruiz</option>
+                                    <option value='Alvarado'>Alvarado</option>
+                                    <option value='Aserrí'>Aserrí</option>
+                                    <option value='Atenas'>Atenas</option>
+                                    <option value='Bagaces'>Bagaces</option>
+                                    <option value='Barva'>Barva</option>
+                                    <option value='Belén'>Belén</option>
+                                    <option value='Belén de Nosarita'>Belén de Nosarita</option>
+                                    <option value='Buenos Aires'>Buenos Aires</option>
+                                    <option value='Carrillo'>Carrillo</option>
+                                    <option value='Cartago'>Cartago</option>
+                                    <option value='Cañas'>Cañas</option>
+                                    <option value='Corredores'>Corredores</option>
+                                    <option value='Coto Brus'>Coto Brus</option>
+                                    <option value='Curridabat'>Curridabat</option>
+                                    <option value='Desamparados'>Desamparados</option>
+                                    <option value='Dota'>Dota</option>
+                                    <option value='El Guarco'>El Guarco</option>
+                                    <option value='El Guarco'>El Guarco</option>
+                                    <option value='Escazú'>Escazú</option>
+                                    <option value='Esparza'>Esparza</option>
+                                    <option value='Flores'>Flores</option>
+                                    <option value='Garabito'>Garabito</option>
+                                    <option value='Goicoechea'>Goicoechea</option>
+                                    <option value='Golfito'>Golfito</option>
+                                    <option value='Grecia'>Grecia</option>
+                                    <option value='Guatuso'>Guatuso</option>
+                                    <option value='Guácimo'>Guácimo</option>
+                                    <option value='Heredia'>Heredia</option>
+                                    <option value='Hoja Blanca'>Hoja Blanca</option>
+                                    <option value='Hojancha'>Hojancha</option>
+                                    <option value='Jiménez'>Jiménez</option>
+                                    <option value='La Cruz'>La Cruz</option>
+                                    <option value='La Unión'>La Unión</option>
+                                    <option value='Lepanto'>Lepanto</option>
+                                    <option value='León Cortés Castro'>León Cortés Castro</option>
+                                    <option value='Liberia'>Liberia</option>
+                                    <option value='Limón'>Limón</option>
+                                    <option value='Los Chiles'>Los Chiles</option>
+                                    <option value='Matina'>Matina</option>
+                                    <option value='Montes de Oro'>Montes de Oro</option>
+                                    <option value='Mora'>Mora</option>
+                                    <option value='Moravia'>Moravia</option>
+                                    <option value='Nandayure'>Nandayure</option>
+                                    <option value='Naranjo'>Naranjo</option>
+                                    <option value='Nicoya'>Nicoya</option>
+                                    <option value='Oreamuno'>Oreamuno</option>
+                                    <option value='Orotina'>Orotina</option>
+                                    <option value='Osa'>Osa</option>
+                                    <option value='Palmares'>Palmares</option>
+                                    <option value='Parrita'>Parrita</option>
+                                    <option value='Pococí'>Pococí</option>
+                                    <option value='Poás'>Poás</option>
+                                    <option value='Puntarenas'>Puntarenas</option>
+                                    <option value='Puriscal'>Puriscal</option>
+                                    <option value='Pérez Zeledón'>Pérez Zeledón</option>
+                                    <option value='Quepos'>Quepos</option>
+                                    <option value='Río Cuarto'>Río Cuarto</option>
+                                    <option value='San Carlos'>San Carlos</option>
+                                    <option value='San Isidro'>San Isidro</option>
+                                    <option value='San José'>San José</option>
+                                    <option value='San Mateo'>San Mateo</option>
+                                    <option value='San Pablo'>San Pablo</option>
+                                    <option value='San Rafael'>San Rafael</option>
+                                    <option value='San Ramón'>San Ramón</option>
+                                    <option value='Santa Ana'>Santa Ana</option>
+                                    <option value='Santa Bárbara'>Santa Bárbara</option>
+                                    <option value='Santa Cruz'>Santa Cruz</option>
+                                    <option value='Sarapiquí'>Sarapiquí</option>
+                                    <option value='Sarchí Norte'>Sarchí Norte</option>
+                                    <option value='Siquirres'>Siquirres</option>
+                                    <option value='Talamanca'>Talamanca</option>
+                                    <option value='Tarrazú'>Tarrazú</option>
+                                    <option value='Tibás'>Tibás</option>
+                                    <option value='Tilarán'>Tilarán</option>
+                                    <option value='Turrialba'>Turrialba</option>
+                                    <option value='Turrubares'>Turrubares</option>
+                                    <option value='Upala'>Upala</option>
+                                    <option value='Valverde Vega'>Valverde Vega</option>
+                                    <option value='Vásquez de Coronado'>Vásquez de Coronado</option>
+                                    <option value='Zarcero'>Zarcero</option>
+                                </select>
+                        </div>
+                        <div class="ingresoIndividual">
+                            <!-- AQUI SE INGRESA EL DISTRITO -->
+                            <h3>DISTRITO</h3>
+                            <input type="text" id="distrito" class="cajasInput " placeholder="" required>
+                        </div>
+                    </div>
+<!-- -------------------------------------- LINEA DE REGISTRO 4 ------------------- -->
+                    <div class="divisionInputs">
+                        <div class="ingresoIndividual">
+                        <!-- AQUI SE INGRESA EL NOMBRE -->
+                        <h3>CONTRASEÑA</h3>
+                        <input type="password" id="contraseña" class="cajasInput "maxlength="8">
+                        </div>
+                        <!-- AQUI SE INGRESA APELLIDO 1 -->
+                        <div class="ingresoIndividual">
+                        <h3>REPITA SU CONTRASEÑA</h3>
+                        <input type="password" id="constraseñaRep" class="cajasInput ">
+                        </div>
+                    </div>
+<!-- -------------------------------------- LINEA DE REGISTRO 5 ------------------- -->
+                    <div class="divisionInputs">
+                        <div class="ingresoIndividual">
+                            <h3>TIPO IDENTIFICACIÓN</h3>
+                            <select name="tipoIdentificación" id="tipoIdentificación" class="selector margenes" required>
+                                <option value="-----">-----</option>
+                                <option value="cedula">CEDULA</option>
+                                <option value="pasaporte">PASAPORTE</option>
+                                <option value="dimex">DIMEX</option>
+                            </select>
+                        </div>
+                        <!-- AQUI SE INGRESA APELLIDO 1 -->
+                        <div class="ingresoIndividual">
+                            <h3>IDENTIFICAIÓN</h3>
+                            <input type="text" id="identficación" class="cajasInput ">
+                        </div>
+                    </div>
+
+                   <!--btn para formulario de matricula-->
+                    <h2>Complete el formulario de matrícula</h2>
+                    <button id="matriculaButton" onclick="location.href='formatricula.html'">Formulario de Matrícula</button>
+
+   
+
+<!-- -------------------------------------- BOTON FINAL ------------------- -->
+                   
+                    <p class="textos"> <br> *Todos los espacios son requisito para registrarse*<br>
+                        La contraseña debe incluir números, consonantes y caracteres especiales
+                    </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            E-LearnSpace © 2024 <br />servicioalcliente@e-learnspace.com <br />
+            Ponte en contacto con nosotros
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </footer>
+    <script src="js/registro.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

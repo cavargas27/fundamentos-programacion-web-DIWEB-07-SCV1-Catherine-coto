@@ -1,0 +1,21 @@
+.invoice {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto; 
+}
+
+.invoice h2 {
+  text-align: center;
+}
+
+.invoice ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.invoice ul li {
+  padding: 5px 0;
+}

@@ -1,0 +1,174 @@
+/* Estilo básico del header */
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/*estilo logo*/
+header img {
+  width: 275px;
+  position: absolute;
+  top: -10.7%;
+  right: 1540px;
+}
+
+/* Estilo del icono del menú */
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* Estilo del menú desplegable */
+nav {
+  display: none;
+  background: #444;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background: #555;
+}
+
+/* Mostrar el menú cuando se activa el toggle */
+.menu-toggle.active + nav {
+  display: block;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+/*estilo modo oscuro */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  left: 50%; 
+  transform: translateX(
+    -50%
+  ); 
+}
+
+/* controla el color de fondo toggle switch  */
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  background-color: #e0e1dd;
+  transition: background-color 0.3s;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 10%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.checkbox:checked + .toggle::before {
+  /* color de fondo cuando esta activado */
+  background-color: #415a77;
+}
+
+.checkbox:checked + .toggle::after {
+  transform: translateX(50px);
+  /* color del círculo cuando esta activado */
+  background-color: #e0e1dd;
+}
+
+/* icono */
+
+.modoOscuroIcon {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-10%);
+  color: orange;
+  left: 5px;
+  font-size: 17px;
+  z-index: 99;
+  transition: opacity 0.3s;
+}
+
+.checkbox:checked + .toggle .fa-sun {
+  opacity: 0;
+}
+
+.checkbox:checked + .toggle .fa-moon {
+  opacity: 1;
+  left: 58px;
+  color: #1b263b;
+}
+.checkbox {
+  display: none;
+}
+
+/* Aca empieza el footer */
+footer {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #e0e1dd;
+}

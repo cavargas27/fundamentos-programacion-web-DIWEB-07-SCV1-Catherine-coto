@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cursos E-LearnSpace</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" class="positionLogo" />
+        <div class="car"><li><a><i class="fa-solid fa-cart-shopping"></i></a></li></div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="login.html">Login/Registro</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="registro.html">Registarse</a></li>
+              <li>
+                  <!-- toggle switch -->
+                  <div class="toggle-switch">
+                      <!--control switch tipo checkbox-->
+                      <input type="checkbox" id="modoOscuroToggle" class="checkbox">
+                      <label for="modoOscuroToggle" class="toggle">
+                          <!--icono modoOscuro-->
+                          <i id="modoOscuroIcon" class="fas fa-sun modoOscuroIcon"></i>
+                          
+                      </label>
+                  </div>
+              </li>
+          </ul>
+      </nav>    
+    </header>
+    <main>
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar cursos...">
+            <button onclick="searchCourses()">Buscar</button>
+        </section>
+        
+        <section class="filters">
+            <br>
+            <label for="categoryFilter"></label>
+            <br>
+            <select id="categoryFilter">
+                <option value="all">Todos</option>
+                <option value="programming">Programación</option>
+                <option value="design">Diseño</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </section>
+        <section id="paymentSummary">
+            <h2>Total a Pagar: $<span id="totalPrice">0.00</span></h2>
+        </section> 
+        <br>
+        <br>
+        <section class="courses-list" id="coursesList">
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/pytontrai.jpg" alt="Curso de Programación">
+                <h2>Introducción a la Programación con Python</h2>
+                <p>Aprende los fundamentos de la programación utilizando Python.</p>
+                <p class="price">$49.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="design">
+                <img src="imagenes/ilustrador..jpg" alt="Curso de Diseño">
+                <h2>Creación de Contenido Visual con Illustrator</h2>
+                <p>Domina Adobe Illustrator para crear ilustraciones vectoriales, logotipos y gráficos complejos.</p>
+                <p class="price">$59.99</p> <!-- Precio agregado -->
+                <br>
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/react.jpg" alt="Curso de Programación">
+                <h2>Desarrollo de Aplicaciones con React</h2>
+                <p>Adéntrate en el desarrollo de aplicaciones web utilizando React.</p>
+                <p class="price">$69.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="courses-list" id="coursesList">
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/c++.jpg" alt="Curso de Programación">
+                <h2>Fundamentos de la Programación en C++</h2>
+                <p>Aprende los conceptos esenciales de C++.</p>
+                <p class="price">$49.99</p> <!-- Precio agregado -->
+                <br>
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/curso2.png" alt="Curso de Programación">
+                <h2>Desarrollo Web con HTML, CSS y JavaScript</h2>
+                <p>Domina las tecnologías clave para crear sitios web interactivos y visualmente atractivos.</p>
+                <p class="price">$79.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="marketing">
+                <br>
+                <img src="imagenes/marketing3.png" alt="Curso de Marketing">
+                <h2>Marketing para Comercio Electrónico</h2>
+                <p>Descubre cómo atraer y convertir clientes en tiendas en línea.</p>
+                <p class="price">$89.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+        </section>  
+        <br>
+        <br>
+        <section class="courses-list" id="coursesList">
+            <div class="course" data-category="design">
+                <br>
+                <img src="imagenes/figma.jpg" alt="Curso de Diseño">
+                <h2>Diseño de Interfaces <br>para Aplicaciones Web con Figma</h2>
+                <p>Aprende a usar Figma para diseñar interfaces de usuario para aplicaciones web.</p>
+                <p class="price">$69.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/java.jpg" alt="Curso de Programación">
+                <h2>Programación en Java desde Cero</h2>
+                <p>Un curso completo para principiantes que cubre los conceptos básicos de Java.</p>
+                <p class="price">$59.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="design">
+                <br>
+                <img src="imagenes/diseñoGrafico.png" alt="Curso de Diseño">
+                <h2>Fundamentos del Diseño Gráfico</h2>
+                <p>Aprende los principios básicos del diseño gráfico, incluyendo teoría del color, tipografía y composición.</p>
+                <p class="price">$49.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+        </section>  
+        <br>
+        <br>
+        <section class="courses-list" id="coursesList">
+            <div class="course" data-category="marketing">
+                <br>
+                <img src="imagenes/marketing2.jpg" alt="Curso de Marketing">
+                <h2>Email Marketing y Automatización</h2>
+                <p>Descubre cómo diseñar campañas de email y marketing efectivas.</p>
+                <p class="price">$79.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="marketing">
+                <br>
+                <img src="imagenes/marketiing1.jpg" alt="Curso de Marketing">
+                <h2>Marketing de Contenidos</h2>
+                <p>Aprende a crear y distribuir contenido valioso para atraer y retener a tu audiencia objetivo.</p>
+                <p class="price">$69.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+            <div class="course" data-category="programming">
+                <br>
+                <img src="imagenes/ruby.jpg" alt="Curso de Programación">
+                <h2>Programación en Ruby on Rails</h2>
+                <p>Aprende a construir aplicaciones web rápidas y seguras utilizando Ruby on Rails.</p>
+                <p class="price">$89.99</p> <!-- Precio agregado -->
+                <button onclick="addToCart(this)">Matricular</button>
+            </div>
+        </section> 
+        <section class="course-selection">
+            <h1>Selecciona tu curso y versión</h1>
+            <div class="dropdowns">
+                <label for="courseSelect">Curso:</label>
+                <select id="courseSelect" onchange="updateCourseVersions()">
+                    <option value="">Selecciona un curso</option>
+                    <option value="python">Introducción a Python</option>
+                    <option value="illustrator">Creación de Contenido con Illustrator</option>
+                    <option value="react">Desarrollo con React</option>
+                    <!-- Agrega más opciones de cursos aquí -->
+                </select>
+        
+                <label for="versionSelect">Versión:</label>
+                <select id="versionSelect">
+                    <option value="">Selecciona una versión</option>
+                </select>
+            </div>
+            <button class="btn_calcular" onclick="calcularCuota()">Calcular Precio</button>
+        
+            <div id="resultado">
+                <p id="cuota"></p>
+            </div>
+        </section>
+        
+    </main>
+     <br>
+    <br>
+    <footer>
+        <p>
+            E-LearnSpace © 2024 <br />servicioalcliente@e-learnspace.com <br />
+            Ponte en contacto con nosotros
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/cursos.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+  font-size: 22px;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.seccion {
+   background-image: url("../imagenes/backgroundhome.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+  }
+  
+
+.seccion h1 {
+  padding-top: 260px;
+  font-size: 95px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+  font-weight: bold;
+}
+
+.nav-item a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease-out;
+}
+.nav-item a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.navigation-wrap .nav-item {
+  padding: 10px;
+  transition: all 200ms linear;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+.dropdown a:focus {
+  color: #000;
+}
+
+.dropdown-menu {
+  background-color: #cfcfcf;
+  border: none;
+}
+.botonScrollTop {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background-color: #1B263B;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #000;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.seccion1 {
+  background-color: #263550;
+}
+
+.seccion1 h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.seccion2 .tituloSeccion2 {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  font-size: 60px;
+}
+
+.seccion2 .icon {
+  clip-path: polygon(
+    25% 5%, 
+    75% 5%, 
+    100% 50%, 
+    75% 95%, 
+    25% 95%, 
+    0% 50%
+  );
+  background-color: #778DA9;
+  width: 130px;
+  padding: 35px;
+  color: #fff;
+}
+.seccion3 {
+  background-image: url("../imagenes/banner3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-attachment: fixed;
+}
+
+.seccion3 h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+  padding-top: 100px;
+}
+
+.seccionInscripcion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagenes/banner3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-attachment: fixed;
+}
+.seccionInscripcion h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+  padding-top: 100px;
+}
+.seccionInscripcion .email {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.seccion4 .tituloSeccion4 {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  font-size: 60px;
+}
+.seccion4 .card {
+  border: none;
+}
+.tituloSeccion5 {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  font-size: 60px;
+}
+.accordion-button {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #415A77;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  font-size: 20px;
+  color: #fff;
+  background-color: #415A77;
+  font-weight: 400;
+}
+.accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-body p {
+  text-align: initial;
+}
+.accordion-body img {
+  width: 500px;
+}
+.accordion-body video {
+  width: 590px;
+  border-radius: 5px;
+}
+.accordion-body iframe {
+  border-radius: 5px;
+}
+
+input[type="button"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background-color: #778DA9;
+  color: #1B263B;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.alertaRoja {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 22px;
+}
+.alertaVerde {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 22px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar-brand img {
+    width: 68px;
+  }
+  .nav-item a {
+    font-size: 17px;
+  }
+  .seccion h1 {
+    font-size: 55px;
+  }
+  .seccion1 h2 {
+    font-size: 27px;
+  }
+  .seccion2 .tituloSeccion2 {
+    font-size: 45px;
+  }
+  .seccion3 h2 {
+    font-size: 45px;
+  }
+  .seccionInscripcion h2 {
+    font-size: 28px;
+  }
+  .seccion4 .tituloSeccion4 {
+    font-size: 45px;
+  }
+  .tituloSeccion5 {
+    font-size: 45px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .botonScrollTop {
+    background-color: #fddb59;
+    right: 13px;
+  }
+  .accordion-body video {
+    width: 311px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar-brand img {
+    width: 90px;
+  }
+  .seccionInscripcion h2 {
+    font-size: 35px;
+  }
+  .nav-item a {
+    font-size: 19px;
+  }
+  .seccion h1 {
+    font-size: 75px;
+  }
+  .seccion1 h2 {
+    font-size: 30px;
+  }
+  .seccion2 .tituloSeccion2 {
+    font-size: 50px;
+  }
+  .seccion3 h2 {
+    font-size: 50px;
+  }
+  .seccion4 .tituloSeccion4 {
+    font-size: 50px;
+  }
+  .tituloSeccion5 {
+    font-size: 50px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .botonScrollTop {
+    background-color: #fddb59;
+    right: 13px;
+  }
+  .accordion-body video {
+    width: 396px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .nav-item a {
+    font-size: 25px;
+  }
+  .seccion h1 {
+    font-size: 85px;
+  }
+  .seccionInscripcion h2 {
+    font-size: 40px;
+  }
+  .seccion1 h2 {
+    font-size: 55px;
+  }
+  .seccion2 .tituloSeccion2 {
+    font-size: 65px;
+  }
+  .seccion3 h2 {
+    font-size: 65px;
+  }
+  .seccion4 .tituloSeccion4 {
+    font-size: 65px;
+  }
+  .tituloSeccion5 {
+    font-size: 65px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .botonScrollTop {
+    background-color: #fddb59;
+    right: 13px;
+  }
+}
+ 
+/* Carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 60%; 
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none; /* Ocultar todas las imágenes inicialmente */
+}
+
+.carousel-item.active {
+  display: block; /* Mostrar la imagen activa */
+}
+
+.card {
+  text-align: center;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #415A77;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+
+/* Estilo del botón */
+#academias-btn {
+  background-color: #415A77; /* Color de fondo verde */
+  border: none;
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Quita el subrayado */
+  display: inline-block;
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Espaciado externo */
+  cursor: pointer; /* Apunta como cursor de mano */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Cambio de color al pasar el ratón */
+#academias-btn:hover {
+  background-color: #778DA9;
+}
+
+/*lightbox*/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin-left: 65%;
+  margin-right: 50%;
+}
+
+#myImg:hover {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  /*width: 100%; 
+  height: 100%; */
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  margin-top: 170px;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+      transform: scale(0)
+  }
+  to {
+      transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #103ea0;
+}
+
+.close:hover,
+.close:focus {
+  color: #103ea0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+      width: 100%;
+  }
+}
+
+/*obeto 3d*/
+model-viewer {
+  width: 400px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  /*background-color: beige;*/
+  /*fondo textura */
+  background-image: url("../assets/textura4.jpeg");
+}
+

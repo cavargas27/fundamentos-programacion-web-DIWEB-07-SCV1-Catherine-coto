@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Cursos - E-LearnSpace</title>
+  <link rel="stylesheet" href="css/tiendaCursos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="E-LearnSpace Logo" />
+    </div>
+
+    <div class="categories">
+      <button class="categories-btn">Categorías</button>
+      <div class="dropdown-menu">
+        <div class="category" data-category="Todos">
+          <span>Todos</span>
+        </div>
+        <div class="category" data-category="Diseño">
+          <span>Diseño</span>
+        </div>
+        <div class="category" data-category="Marketing">
+          <span>Marketing</span>
+        </div>
+        <div class="category" data-category="Programación">
+          <span>Programación</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Buscar cursos..." />
+    </div>
+    <div id="error-message" class="error-message">Opción no encontrada</div>
+    <div class="header-icons">
+      <a href="carrito.html">
+        <!-- Asegúrate de cambiar la URL a la correcta -->
+        <div class="cart-icon">
+          <img src="imagenes/carrito (2).png" alt="Carrito de Compras" />
+        </div>
+      </a>
+
+      <div class="auth-buttons">
+        <button id="btn-login" class="login-btn">Login</button>
+        <button id="btn-registro" class="register-btn">Registro</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="courses">
+      <div class="course-item" data-category="Diseño">
+        <img src="imagenes/ilustrador.jpg" alt="Curso de Diseño Gráfico" class="course-image" />
+        <h3>Creación de Contenido Visual con Illustrator</h3>
+        <p>
+          Domina Adobe Illustrator para crear ilustraciones vectoriales,
+          logotipos y gráficos complejos.
+        </p>
+        <p class="price">19.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="122">Agregar a la Cesta</button>
+      </div>
+      <div class="course-item" data-category="Diseño">
+        <img src="imagenes/diseñoGrafico.png" alt="Curso de Diseño UI/UX" class="course-image" />
+        <h3>Fundamentos del Diseño Gráfico</h3>
+        <p>
+          Aprende los principios básicos del diseño gráfico, incluyendo teoría
+          del color, tipografía y composición.
+        </p>
+        <p class="price">26.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="123">
+          Agregar a la Cesta
+        </button>
+      </div>
+      <div class="course-item" data-category="Marketing">
+        <img src="imagenes/marketing3.png" alt="Marketing" class="course-image" />
+        <h3>Marketing para Comercio Electrónico</h3>
+        <p>Descubre cómo atraer y convertir clientes en tiendas en línea.</p>
+        <p class="price">22.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="124">
+          Agregar a la Cesta
+        </button>
+      </div>
+      <div class="course-item" data-category="Marketing">
+        <img src="imagenes/marketiing1.jpg" alt="Marketing" class="course-image" />
+        <h3>Marketing de Contenidos</h3>
+        <p>Optimiza sitios web para motores de búsqueda.</p>
+        <p class="price">59.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="125">
+          Agregar a la Cesta
+        </button>
+      </div>
+      <div class="course-item" data-category="Programación">
+        <img src="imagenes/pytontrai.jpg" alt="Curso de Desarrollo Móvil" class="course-image" />
+        <h3>Introducción a la Programación con Python</h3>
+        <p>Aprende los fundamentos de la programación utilizando Python.</p>
+        <p class="price">29.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="126">
+          Agregar a la Cesta
+        </button>
+      </div>
+      <div class="course-item" data-category="Programación">
+        <img src="imagenes/react.jpg" alt="Curso de Desarrollo Móvil" class="course-image" />
+        <h3>Desarrollo de Aplicaciones con React</h3>
+        <p>
+          Adéntrate en el desarrollo de aplicaciones web utilizando React.
+        </p>
+        <p class="price">30.99</p>
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="127">
+          Agregar a la Cesta
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/tiendaCursos.js"></script>
+</body>
+
+</html>

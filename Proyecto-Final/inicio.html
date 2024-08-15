@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" class="positionLogo" />
+        <div class="car"><li><a><i class="fa-solid fa-cart-shopping"></i></a></li></div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="loginWeb.html">Login/Registro</a></li>
+            <li><a href="tiendaCursos.html">Cursos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="registroWeb.html">Registarse</a></li>
+            <li><a href="./docs/manual.pdf" class="manual-uso-btn">Manual de Uso</a></li>
+              
+              <li>
+                  <!-- toggle switch -->
+                  <div class="toggle-switch">
+                      <!--control switch tipo checkbox-->
+                      <input type="checkbox" id="modoOscuroToggle" class="checkbox">
+                      <label for="modoOscuroToggle" class="toggle">
+                          <!--icono modoOscuro-->
+                          <i id="modoOscuroIcon" class="fas fa-sun modoOscuroIcon"></i>
+                          
+                      </label>
+                  </div>
+              </li>
+          </ul>
+      </nav> 
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Academia de cursos online <br>E-LearnSpace</h1>
+            <button id="start-button">Iniciar</button>
+        </div>
+    </main>
+  
+
+    <footer>
+        <p>
+            E-LearnSpace © 2024 <br />servicioalcliente@e-learnspace.com <br />
+            Ponte en contacto con nosotros
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/E-LearnSpace">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/E-LearnSpace">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/E-LearnSpace">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>
